@@ -1,0 +1,26 @@
+{
+  "name": "cogs121-sp16-ass0",
+  "version": "1.0.0",
+  "description": "Github Repository for COGS 121 Spring 2016 - Assignment 0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "mongod --dbpath dbpath --logpath log/mongod.log&",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dkim0526/cogs121-sp16-ass0.git"
+  },
+  "author": "danielkim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkim0526/cogs121-sp16-ass0/issues"
+  },
+  "homepage": "https://github.com/dkim0526/cogs121-sp16-ass0",
+  "dependencies": {
+    "express": "^4.13.4",
+    "handlebars": "^4.0.5"
+  },
+  "devDependencies": {}
+}
