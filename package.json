@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/dkim0526/cogs121-sp16-ass0",
   "dependencies": {
-    "express": "^4.13.4",
-    "handlebars": "^4.0.5"
+    "express": "4.13.4",
+    "handlebars": "4.0.5"
   },
   "devDependencies": {}
 }
