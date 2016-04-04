@@ -4,7 +4,6 @@
   "description": "Github Repository for COGS 121 Spring 2016 - Assignment 0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "mongod --dbpath dbpath --logpath log/mongod.log&",
     "start": "node server.js"
   },
