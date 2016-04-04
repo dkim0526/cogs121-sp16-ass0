@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Github Repository for COGS 121 Spring 2016 - Assignment 0",
   "main": "server.js",
-  "scripts" : {
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "mongod --dbpath dbpath --logpath log/mongod.log&",
     "start": "node server.js"
   },
@@ -19,7 +20,10 @@
   "homepage": "https://github.com/dkim0526/cogs121-sp16-ass0",
   "dependencies": {
     "express": "4.13.4",
-    "handlebars": "4.0.5"
+    "express-handlebars": "3.0.0",
+    "body-parser": "1.15.0",
+    "mongodb": "1.4.30",
+    "mongoose": "3.8.23"
   },
   "devDependencies": {}
 }
