@@ -12,7 +12,7 @@
     <!-- Website title -->
     <title>Daniel's PA0</title>
     <!-- CSS file for PA0 -->
-    <link href="css/style.css" rel="stylesheet">
+    
     <!-- JQuery CDN -->
     <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script> 
     <!-- Latest compiled and minified CSS -->
@@ -23,25 +23,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- Image for favicon -->
     <link rel="shortcut icon" type="image/ico" href="./Images/pug.jpg" />
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-    <br>
     <div class="col-lg-12" style="text-align:center;">Welcome to Daniel's PA0 !</div>
-    <br>
-    <div style="text-align: center;">
-        <iframe src="//giphy.com/embed/hEwST9KM0UGti" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="./">Hi! Hope you have a great day today!</a></p>
+    <div></div>
+    <div style="text-align: center; ">
+        <iframe src="//giphy.com/embed/hEwST9KM0UGti" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><div><a href="./">Hi! Hope you have a great day today!</a></div>
     </div>
-    <br>
-    <div style="text-align: center;"> Contact us by providing your name and email! </div>
-    <br>
+    <div style="text-align: center; padding-top: 15px; padding-bottom: 15px;"> Contact us by providing your name and email! </div>
     <form action="/message" method="post">
-    	<div class="col-lg-12" style="text-align:center;">Email: <input type="text" name="email"></div>
-        <br>
-        <br>
-    	<div style="text-align:center;"><t>Content:</t> 
-            <textarea name="content"></textarea>
+    	<div class="col-lg-12" style="text-align:center; padding-top: 15px; padding-bottom: 15px;">Email: <input type="text" name="email"></div>
+    	<div style="text-align:center; padding-top: 15px; padding-bottom: 15px;"><t>Content:</t> 
+            <textarea name="content" height:250px;></textarea>
         </div>
-    	
         <div style="text-align:center;"><input type="submit" value="Submit"></div>
     </form>
     {{#if data}}
