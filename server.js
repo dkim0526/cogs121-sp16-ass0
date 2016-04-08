@@ -8,7 +8,8 @@ var express = require('express');
 var app = express();
 
 var router = {
-    index: require("./routes/index")
+    index: require("./routes/index"),
+    email: require("./routes/message")
 };
 
 var parser = {
@@ -40,7 +41,7 @@ app.use(errorHandler);
 // Routes
 app.get("/", router.index.view);
 // POST method route
-app.post("/message", router.index.view);
+app.post("/message", router.email.send);
 
 app.use(function(err, req, res, next) {
   console.error(err.stack);
