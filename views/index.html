@@ -26,15 +26,17 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="col-lg-12" style="text-align:center;">Welcome to Daniel's PA0 !</div>
+    <div class="col-lg-12" style="text-align:center;">Welcome to TRY ME !</div>
     <div></div>
     <div style="text-align: center; ">
         <iframe src="//giphy.com/embed/hEwST9KM0UGti" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><div><a href="./">Hi! Hope you have a great day today!</a></div>
     </div>
-    <div style="text-align: center; padding-top: 15px; padding-bottom: 15px;"> Contact us by providing your name and email! </div>
+    <div style="text-align: center; padding-top: 15px; padding-bottom: 15px;"> Please fill your information to get contacted by your hiring managers! </div>
     <form action="/message" method="post">
+        <div class="col-lg-12" style="text-align:center; padding-top: 15px; padding-bottom: 15px;">Name: <input type="text" name="name"></div>
     	<div class="col-lg-12" style="text-align:center; padding-top: 15px; padding-bottom: 15px;">Email: <input type="text" name="email"></div>
-    	<div style="text-align:center; padding-top: 15px; padding-bottom: 15px;"><t>Content:</t> 
+        <div class="col-lg-12" style="text-align:center; padding-top: 15px; padding-bottom: 15px;">Profile: <input type="text" name="name"></div>
+    	<div class="col-lg-12" style="text-align:center; padding-top: 15px; padding-bottom: 15px;"><t>Content: </t> 
             <textarea name="content" style=250px;></textarea>
         </div>
         <div style="text-align:center;"><input type="submit" value="Submit"></div>
@@ -43,14 +45,18 @@
     <div class="col-lg-12" style="text-align:center;">My Messages</div>
     <table class="col-lg-12" style="text-align:center;">
     	<thead>
+            <th>Name</th>
     		<th>Email</th>
+            <th>Profile</th>
     		<th>Content</th>
     		<th>Date</th>
     	</thead>
     	<tbody>
     		{{#each data}}
     		<tr>
-    			<td>{{email}}</td>
+                <td>{{name}}</td>
+                <td>{{email}}</td>
+    			<td>{{profile}}</td>
     			<td>{{content}}</td>
     			<td>{{created}}</td>
     		</tr>
